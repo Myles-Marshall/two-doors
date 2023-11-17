@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <title>Two Doors</title>
+</head>
+<body>
+<div class="container">
+  <div id="welcome-head">
+    <h1>WElCOME BOYS AND GHOULS</h1>
+  </div>
+  
+  <div id="input-and-button">
+    <input id="name-input" type="text" placeholder="enter your name" />
+    <button id="submit-button" type="button" onclick="inputSequence()">submit</button>
+  </div>
+  
+  <h2 id="hello-message"></h2>
+  
+  <div id="anim-images">
+    <img alt="spider web" id="spider-web" src="https://westmeccoding.github.io/spider-animation/halloween-spider-web.png" height=100 width=75 />
+    <img alt="spider" id="spider" src="https://westmeccoding.github.io/spider-animation/halloween-spider-noweb.png" height=100 width=75 />
+    <img alt="spooky person" id="spooky-guy" src="https://westmeccoding.github.io/Scary_door_Choice/crypt-keeper.png" height=150 width=150 />
+  </div>
+
+  <div id="hidden-content-container">
+
+    <div id="left-door" class="choices">
+       <p>LEFT</p>
+    </div>
+
+    <div id="right-door" class="choices">
+        <p>RIGHT</p>
+    </div>
+
+    <div id="door-buttons">
+      <button id="left-button" onclick="chooseButton('left')">Choose Left</button>
+
+      <button id="right-button" onclick="chooseButton('right')">Choose Right</button>
+    </div>
+
+    <p>
+      YOU CHOSE: 
+      <span id="choice-text"></span>
+    </p>
+
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
